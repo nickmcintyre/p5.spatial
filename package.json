@@ -1,0 +1,54 @@
+{
+  "name": "p5.spatial",
+  "version": "0.0.1",
+  "description": "A p5.js addon library for spatial analysis and visualization",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "test": "karma start --single-run --browsers ChromeHeadless karma.conf.js",
+    "dev": "webpack --watch --config webpack.config.js",
+    "all": "npm run build && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickmcintyre/p5.spatial.git"
+  },
+  "keywords": [
+    "p5.js",
+    "spatial",
+    "analysis",
+    "map",
+    "turf",
+    "leaflet"
+  ],
+  "author": "Nick McIntyre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nickmcintyre/p5.spatial/issues"
+  },
+  "homepage": "https://github.com/nickmcintyre/p5.spatial#readme",
+  "dependencies": {
+    "@turf/turf": "^6.5.0",
+    "leaflet": "^1.8.0",
+    "leaflet-providers": "^1.13.0"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.7.11",
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
+    "chai": "^4.3.6",
+    "eslint": "^8.22.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "karma": "^6.4.0",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-mocha": "^2.0.1",
+    "mocha": "^10.0.0",
+    "p5": "^1.4.2",
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.7.4",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}

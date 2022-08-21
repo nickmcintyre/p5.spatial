@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - lts/*
+
+addons:
+  chrome: stable
+
+script:
+  - npm run build
+  - npm run test
